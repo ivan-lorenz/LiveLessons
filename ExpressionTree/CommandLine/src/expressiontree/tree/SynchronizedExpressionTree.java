@@ -100,7 +100,7 @@ public class SynchronizedExpressionTree
     public Iterator<ExpressionTree> makeIterator(String traversalOrder) {
         Iterator<ExpressionTree> temp;
         synchronized(this) {
-            temp = mTreeIteratorFactory.makeIterator(this,
+            temp = mTreeIteratorFactory.iterator(this,
                                                     traversalOrder);
         }
         return temp;

@@ -83,7 +83,7 @@ public class ExpressionTree
     public Iterator<ExpressionTree> makeIterator(String traversalOrderRequest) {
         // Use the TreeIteratorFactory to create the requested
         // iterator.
-        return mTreeIteratorFactory.makeIterator(this,
+        return mTreeIteratorFactory.iterator(this,
                                                  traversalOrderRequest);
     }
 

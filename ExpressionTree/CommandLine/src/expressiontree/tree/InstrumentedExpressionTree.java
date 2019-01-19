@@ -95,7 +95,7 @@ public class InstrumentedExpressionTree
     public Iterator<ExpressionTree> makeIterator(String traversalOrder) {
         System.out.println("starting iterator() call");
         Iterator<ExpressionTree> temp =
-            mTreeIteratorFactory.makeIterator(this,
+            mTreeIteratorFactory.iterator(this,
                                              traversalOrder);
         System.out.println("finished iterator() call");
         return temp;
